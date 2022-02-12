@@ -3,9 +3,9 @@
 {% load static %}
 
 {% block content %}
- <link rel="stylesheet" href="{% static 'fiji/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'fiji/css/main.css' %}">
     <div class="container">
         <h1>You have been Logged out</h1>
-        <h5><a href="">Login In Again</a></h5>
+        <h5><a href="{% url 'login' %}">Login In Again</a></h5>
     </div>
 {% endblock %}
