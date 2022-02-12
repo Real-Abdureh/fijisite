@@ -20,3 +20,7 @@ def register(request):
       form = UserRegisterForm()
 
    return render(request, 'fiji/register.html', {'form': form})
+
+
+def profile(request):
+    return render(request, 'fiji/profile.html')
